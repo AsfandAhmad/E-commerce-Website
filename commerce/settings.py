@@ -8,7 +8,8 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 # SECURITY
 SECRET_KEY = os.getenv('SECRET_KEY', 'fallback-secret-key')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'yourusername.pythonanywhere.com').split(',')
+ALLOWED_HOSTS = ['asfandahmad.pythonanywhere.com', 'localhost', '127.0.0.1']
+
 
 # Applications
 INSTALLED_APPS = [
